@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/battousai/Neuron/include/Neuron.h
+iostream
+-
+
+/home/battousai/Neuron/src/Neuron.cpp
+../include/Neuron.h
+/home/battousai/Neuron/include/Neuron.h
+cmath
+-
+
+/home/battousai/Neuron/src/main.cpp
+../include/Neuron.h
+/home/battousai/Neuron/include/Neuron.h
+iostream
+-
+
